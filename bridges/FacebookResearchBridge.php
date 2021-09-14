@@ -36,7 +36,7 @@ class FacebookResearchBridge extends BridgeAbstract {
 				$item = array();
 
                 $article_title = trim($element->find('h3', 0)->plaintext);
-                $article_uri = self::URI . substr($element->find('a', 0)->href, 1);
+                $article_uri = $element->find('a', 0)->href;
 //                 $article_thumbnail = array();
                 $article_timestamp = strtotime($element->find('span.publication-paper__date', 0)->plaintext);
                 $article_author = trim($element->find('span.publication-paper__author', 0)->plaintext);
