@@ -7,10 +7,10 @@
 *    qdr:y : in past year
 *    sbd:1 : sort by date (will only work if qdr: is specified)
 */
-class FacebookResearch extends BridgeAbstract {
+class FacebookResearchBridge extends BridgeAbstract {
 
 	const MAINTAINER = 'priyam';
-	const NAME = 'Facebook Research';
+	const NAME = 'Facebook research';
 	const URI = 'https://research.fb.com/publications/';
 	const CACHE_TIMEOUT = 3600; // 1hr
 	const DESCRIPTION = 'Returns most recent results from Facebook Research';
